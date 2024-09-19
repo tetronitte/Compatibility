@@ -10,8 +10,8 @@ public class Algorithme {
     private static final String NAME2_OUT = "Entrez le deuxième nom : ";
 
     private Scanner scanner = new Scanner(System.in);
-    private String nom1;
-    private String nom2;
+    private String name1;
+    private String name2;
     private String concatenatedNames;
     private Map<Character, Integer> alphabet = new HashMap<>();
     private Map<String, String> compatibilities = new LinkedHashMap<>();
@@ -46,6 +46,7 @@ public class Algorithme {
         compatibilities.put("MUSIC", "musicale");
         compatibilities.put("ASTRO", "astrologique");
         compatibilities.put("POLITIQUE", "politique");
+        compatibilities.put("ESPRIT", "spirituelle");
     }
 
     /**
@@ -54,14 +55,14 @@ public class Algorithme {
     private void readNames() {
         // Lecture du premier nom
         System.out.print(NAME1_OUT);
-        nom1 = removeAccent(scanner.nextLine()).toUpperCase();
+        name1 = removeAccent(scanner.nextLine()).toUpperCase();
 
         // Lecture du deuxième nom
         System.out.print(NAME2_OUT);
-        nom2 = removeAccent(scanner.nextLine()).toUpperCase();
+        name2 = removeAccent(scanner.nextLine()).toUpperCase();
 
         // Concaténation des deux noms
-        concatenatedNames = nom1 + nom2;
+        concatenatedNames = name1 + name2;
     }
 
     /**
