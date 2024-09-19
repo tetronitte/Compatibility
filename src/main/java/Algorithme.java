@@ -47,6 +47,7 @@ public class Algorithme {
         compatibilities.put("ASTRO", "astrologique");
         compatibilities.put("POLITIQUE", "politique");
         compatibilities.put("ESPRIT", "spirituelle");
+        compatibilities.put("LUDIQUE", "ludique");
     }
 
     /**
